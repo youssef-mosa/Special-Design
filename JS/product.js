@@ -13,6 +13,13 @@ cartIcon.addEventListener("click",(e)=>{
 arrowIcon.addEventListener("click",(e)=>{
     e.preventDefault();
     cartBox.classList.toggle('active');
+});
+
+let hamburger = document.querySelector(".hamburger");
+let navList = document.querySelector(".nav-list");
+
+hamburger.addEventListener('click',(e)=>{
+    navList.classList.toggle('active');
 })
 
 function createProduct(p){

@@ -80,7 +80,7 @@ header {
 }
 
 .cart-box.active {
-    right: 0;
+    right: -12px;
 }
 .cart-box .arrow-icon {
     color: var(--olive-green);
@@ -137,7 +137,14 @@ header {
     background-color: var(--bright-green);
 }
 
-.hamburger { display: none; background: none; border: none; cursor: pointer; color: var(--white); }
+.hamburger { 
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--white); 
+    font-size: 22px;
+}
 /* ── PAGE HERO ── */
 .page-hero {
     background-color: var(--dark-green);
@@ -437,12 +444,25 @@ footer p { font-size: 13px; color: #aaa; }
     .plants-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
-    .container-nav { padding: 15px 20px; }
-    .nav-list { display: none; }
-    .hamburger { display: block; }
-    .page-hero { padding: 40px 20px 30px; }
-    .page-hero h2 { font-size: 30px; }
-    .search-bar-section { padding: 0 20px 24px; }
+    .container-nav 
+    { 
+        padding: 15px 20px; 
+    }
+    .nav-list {
+        display: none;
+    }
+    .hamburger { 
+        display: block; 
+    }
+    .page-hero { 
+        padding: 40px 20px 30px; 
+    }
+    .page-hero h2 { 
+        font-size: 30px; 
+    }
+    .search-bar-section { 
+        padding: 0 20px 24px; 
+    }
     .shop-layout {
         grid-template-columns: 1fr;
         padding: 20px;
@@ -451,7 +471,37 @@ footer p { font-size: 13px; color: #aaa; }
         position: static;
         order: -1;
     }
-    .plants-grid { grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .plants-grid { 
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px; 
+    }
+    .nav-list {
+        display: block;
+        width: 90%;
+        border-radius: 10px;
+        background-color: var(--dark-green);
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        left: 20px;
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-list.active {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateY(0);
+    }
+
+    .nav-list ul {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
 }
 @media (max-width: 480px) {
     .plants-grid { grid-template-columns: 1fr; }
