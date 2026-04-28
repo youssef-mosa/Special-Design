@@ -726,6 +726,12 @@ header.scrolled {
     }
 }
 
+@media ((min-width: 1024px) and (max-width: 1300px))
+{
+    .about-content {
+        right: 10%;
+    }
+}
 @media (max-width: 767px) {
     .about-section {
         height: auto;
