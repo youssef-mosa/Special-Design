@@ -625,6 +625,9 @@ header.scrolled {
     .plants-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    .plant-card img:hover{
+    transform: rotate(0deg);
+}
 }
 
 @media (max-width: 767px) {
@@ -640,12 +643,18 @@ header.scrolled {
     .plant-card img {
         height: 300px;
     }
+    .plant-card img:hover{
+    transform: rotate(0deg);
+}
 }
 
 @media (max-width: 480px) {
     .plants-grid {
         grid-template-columns: 1fr;
     }
+    .plant-card img:hover{
+    transform: rotate(0deg);
+}
 }
 
 /* End collection section */
