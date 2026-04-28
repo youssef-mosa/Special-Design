@@ -1,0 +1,11 @@
+[
+    { "id": 1, "name": "Monstera Deliciosa", "category": "tropical", "price": 49.99, "care": "easy", "light": "medium", "badge": "Popular", "img": "Images/product_1.png" },
+    { "id": 2, "name": "Snake Plant", "category": "air-purifying", "price": 29.99, "care": "easy", "light": "low", "badge": "", "img": "Images/product_2.jpg" },
+    { "id": 3, "name": "ZZ Plant", "category": "foliage", "price": 34.99, "care": "easy", "light": "low", "badge": "", "img": "Images/product_3.jpg" },
+    { "id": 4, "name": "Peace Lily", "category": "flowering", "price": 39.99, "care": "medium", "light": "medium", "badge": "New", "img": "Images/product_4.jpg" },
+    { "id": 5, "name": "Fiddle Leaf Fig", "category": "tropical", "price": 59.99, "care": "hard", "light": "bright", "badge": "", "img": "Images/product_5.jpg" },
+    { "id": 6, "name": "Pothos", "category": "foliage", "price": 19.99, "care": "easy", "light": "low", "badge": "Sale", "img": "Images/product_1.png" },
+    { "id": 7, "name": "Aloe Vera", "category": "succulent", "price": 24.99, "care": "easy", "light": "bright", "badge": "", "img": "Images/product_2.jpg" },
+    { "id": 8, "name": "Bird of Paradise", "category": "tropical", "price": 79.99, "care": "medium", "light": "bright", "badge": "Premium", "img": "Images/product_3.jpg" },
+    { "id": 9, "name": "Spider Plant", "category": "air-purifying", "price": 22.99, "care": "easy", "light": "medium", "badge": "", "img": "Images/product_4.jpg" }
+]

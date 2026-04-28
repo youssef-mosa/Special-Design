@@ -1,0 +1,74 @@
+[
+  {
+    "stars": 5,
+    "text": "The plants arrived fresh and healthy, packaging was secure and neat, and the overall experience felt premium and well organized.",
+    "name": "Sarah J.",
+    "image": "Images/user1.webp"
+  },
+  {
+    "stars": 4,
+    "text": "Good quality plants and smooth delivery process, everything was handled professionally and arrived in a very decent condition.",
+    "name": "John M.",
+    "image": "Images/user2.jpg"
+  },
+  {
+    "stars": 5,
+    "text": "I really loved the plants, they look amazing in my room and added a fresh vibe to the place, definitely worth the purchase.",
+    "name": "Emily R.",
+    "image": "Images/user3.jpg"
+  },
+  {
+    "stars": 4,
+    "text": "Overall a nice experience, plants were good and fresh, packaging was acceptable though it could be slightly improved.",
+    "name": "Michael B.",
+    "image": "Images/user4.jpg"
+  },
+  {
+    "stars": 5,
+    "text": "Amazing quality and attention to detail, everything arrived in perfect shape and looked even better than the pictures online.",
+    "name": "Anna K.",
+    "image": "Images/user5.jpg"
+  },
+  {
+    "stars": 4,
+    "text": "Plants were in good condition and delivery was fine, customer support could respond faster but still a good experience overall.",
+    "name": "David L.",
+    "image": "Images/user6.jpg"
+  },
+  {
+    "stars": 5,
+    "text": "Everything came in perfect condition, plants were fresh and vibrant, and the whole process felt smooth and easy.",
+    "name": "Sophia N.",
+    "image": "Images/user7.jpg"
+  },
+  {
+    "stars": 3,
+    "text": "The experience was average, plants were okay but not exceptional, expected a bit more quality for the price paid.",
+    "name": "Chris P.",
+    "image": "Images/user8.jpg"
+  },
+  {
+    "stars": 5,
+    "text": "Excellent service and beautiful selection, the plants look stunning and the packaging was done with great care.",
+    "name": "Olivia T.",
+    "image": "Images/user9.jpg"
+  },
+  {
+    "stars": 4,
+    "text": "Nice plants and good overall quality, delivery was slightly delayed but everything arrived safely in the end.",
+    "name": "James W.",
+    "image": "Images/user10.jpg"
+  },
+  {
+    "stars": 5,
+    "text": "Very happy with my purchase, plants were fresh and well packed, and delivery was quicker than expected.",
+    "name": "Emma D.",
+    "image": "Images/user11.jpg"
+  },
+  {
+    "stars": 5,
+    "text": "Highly recommended for anyone who loves plants, great quality, fast service, and a very smooth shopping experience.",
+    "name": "Noah S.",
+    "image": "Images/user12.jpg"
+  }
+]

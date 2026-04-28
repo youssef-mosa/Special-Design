@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verde — Plants Collection</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="CSS/product.css">
+</head>
+<body>
+<!-- NAVBAR -->
+<header>
+    <div class="container-nav">
+        <button class="hamburger">☰</button>
+        <h1><a href="index.html">Verde</a></h1>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="index.html#Home">Home</a></li>
+                <li><a href="plants.html" style="color: var(--bright-green);">Plants</a></li>
+                <li><a href="index.html#About">About</a></li>
+                <li><a href="index.html#Blog">Blog</a></li>
+                <li><a href="index.html#Contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-icons">
+            <a href="#"><i data-lucide="user"></i></a>
+            <a href="#" class="cart" data-count="0"><i data-lucide="shopping-cart"></i></a>
+        </div>
+    </div>
+</header>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+    <span>Our Collection</span>
+    <h2>All Plants</h2>
+    <p>Find the perfect plant for your home</p>
+</div>
+
+<!-- SEARCH BAR -->
+<div class="search-bar-section">
+    <div class="search-bar-wrapper">
+        <input type="text" id="searchInput" placeholder="Search plants...">
+        <button onclick="searchPlants()"><i class="fas fa-search"></i></button>
+    </div>
+</div>
+
+<!-- MAIN LAYOUT -->
+<div class="shop-layout">
+
+    <!-- FILTER SIDEBAR -->
+    <aside class="filter-sidebar">
+        <h3>🌿 Filter Plants</h3>
+
+        <div class="filter-group">
+            <h4>Category</h4>
+            <label><input type="checkbox" class="filter-cat" value="tropical"> Tropical</label>
+            <label><input type="checkbox" class="filter-cat" value="succulent"> Succulent</label>
+            <label><input type="checkbox" class="filter-cat" value="flowering"> Flowering</label>
+            <label><input type="checkbox" class="filter-cat" value="foliage"> Foliage</label>
+            <label><input type="checkbox" class="filter-cat" value="air-purifying"> Air Purifying</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Price Range</h4>
+            <div class="price-range">
+                <input type="range" id="priceRange" min="0" max="100" value="100" oninput="updatePrice(this.value)">
+                <div class="price-labels">
+                    <span>$0</span>
+                    <span id="priceValue">$100</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="filter-group">
+            <h4>Care Level</h4>
+            <label><input type="checkbox" class="filter-care" value="easy"> Easy</label>
+            <label><input type="checkbox" class="filter-care" value="medium"> Medium</label>
+            <label><input type="checkbox" class="filter-care" value="hard"> Hard</label>
+        </div>
+
+        <div class="filter-group">
+            <h4>Light</h4>
+            <label><input type="checkbox" class="filter-light" value="low"> Low Light</label>
+            <label><input type="checkbox" class="filter-light" value="medium"> Medium Light</label>
+            <label><input type="checkbox" class="filter-light" value="bright"> Bright Light</label>
+        </div>
+
+        <button class="filter-btn" onclick="applyFilters()">Apply Filters</button>
+        <button class="clear-btn" onclick="clearFilters()">Clear All</button>
+    </aside>
+
+    <!-- PRODUCTS AREA -->
+    <div class="products-area">
+        <div class="products-toolbar">
+            <p class="products-count">Showing <span id="productCount">0</span> plants</p>
+            <select class="sort-select" onchange="sortProducts(this.value)">
+                <option value="default">Sort: Default</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+            </select>
+        </div>
+
+        <div class="plants-grid" id="plantsGrid">
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 Verde. All Rights Reserved.</p>
+</footer>
+<!-- cart box -->
+<div class="cart-box">
+                    <a href="" class="arrow-icon"><i data-lucide="arrow-left"></i></a>
+                    <div class="product">
+                        <img src="Images/product_2.jpg" alt="Product_1">
+                        <div class="chart-content">
+                            <h2>AA Plant</h2>
+                            <p class="price"><s>34.99</s><br><span style="color: #888;">Free</span></p>
+                        </div>
+                        <a href="#" class="btn-buy">Buy Now</a>
+                        <a href="#" class="delete"><i data-lucide="x"></i></a>
+                    </div>
+    </div>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="JS/product.js"></script>
+<script src="JS/main.js"></script>
+</body>
+</html>
